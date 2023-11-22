@@ -1,0 +1,1 @@
+ReactDOM.render(<h1>Hello, everyone</h1>, document.getElementById("root"));//ReactDOM is a global variable made available by (ReactDom link in HTML)

@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client";
 
 // ReactDOM.render(<h1 className="header">My name is Lemis</h1>, document.getElementById("root"));//ReactDOM is a global variable made available by (ReactDom link in HTML)
 // //ReactDom library gives us access to the render method
@@ -32,4 +32,6 @@ const navbar = (
     </nav>
 )
 
-ReactDOM.render(navbar, document.getElementById("root"));
+//ReactDOM.render(navbar, document.getElementById("root"));
+ 
+ReactDOM.createRoot(document.getElementById("root")).render(navbar);

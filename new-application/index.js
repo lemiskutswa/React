@@ -36,8 +36,13 @@
 
 function Header() {
     return (
-        <nav>
-            <img src="./react-logo.png" width="40px"/>
+        <nav className="nav-bar">
+            <img src="./react-logo.png" className="nav-logo"/>
+            <ul className="nav-items">
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
         </nav>
     );
 }
@@ -58,15 +63,19 @@ function MainContent () {
     )
 }
 
-function Footer() {
-    <footer>2023 @Lemis Development. All rights reserved</footer>
+function FooterSection () {
+    <div>
+        <footer>2023 Lemis Development. All rights reserved</footer>;
+    </div>
+    
 }
+
 function Page () {
     return (
     <div>
         <Header />
         <MainContent />
-        <Footer />
+        <footer className="footer">2023 Lemis Development. All rights reserved</footer>
     </div>
     );
 }

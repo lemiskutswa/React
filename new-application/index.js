@@ -1,6 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
 // ReactDOM.render(<h1 className="header">My name is Lemis</h1>, document.getElementById("root"));//ReactDOM is a global variable made available by (ReactDom link in HTML)
 // //ReactDom library gives us access to the render method
 
@@ -37,21 +34,24 @@ import ReactDOM from "react-dom/client";
  
 // ReactDOM.createRoot(document.getElementById("root")).render(navbar);
 
-const page = (
-    <div>
-        <img src="react-logo.png" width="40px"/>
-        <h1>Fun Facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on GitHub</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-);
+function TemporaryComponent () {
+    return (
+        <div>
+            <img src="react-logo.png" width="40px"/>
+            <h1>Fun Facts about React</h1>
+            <ul>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on GitHub</li>
+                <li>Is maintained by Facebook</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+            </ul>
+        </div>
+    );
+}
+
 
 //ReactDOM.createRoot(document.getElementById("root")).render(page);
-ReactDOM.render(page, document.getElementById("root"));
+ReactDOM.render(<temporaryComponent />, document.getElementById("root"));
 
-console.log(page);
+console.log(temporaryComponent);

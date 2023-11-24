@@ -34,24 +34,43 @@
  
 // ReactDOM.createRoot(document.getElementById("root")).render(navbar);
 
-function TemporaryComponent () {
+function Header() {
+    return (
+        <nav>
+            <img src="./react-logo.png" width="40px"/>
+        </nav>
+    );
+}
+
+function MainContent () {
     return (
         <div>
-            <img src="react-logo.png" width="40px"/>
-            <h1>Fun Facts about React</h1>
-            <ul>
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100K stars on GitHub</li>
-                <li>Is maintained by Facebook</li>
-                <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul>
+        <h1>Fun Facts about React</h1>
+        <ul>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100K stars on GitHub</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
         </div>
+
+    )
+}
+
+function Footer() {
+    <footer>2023 @Lemis Development. All rights reserved</footer>
+}
+function Page () {
+    return (
+    <div>
+        <Header />
+        <MainContent />
+        <Footer />
+    </div>
     );
 }
 
 
 //ReactDOM.createRoot(document.getElementById("root")).render(page);
-ReactDOM.render(<temporaryComponent />, document.getElementById("root"));
-
-console.log(temporaryComponent);
+ReactDOM.render(<Page />, document.getElementById("root"));

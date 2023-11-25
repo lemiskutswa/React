@@ -50,7 +50,7 @@ function Header() {
 function MainContent () {
     return (
         <div>
-        <h1>Fun Facts about React</h1>
+        <h1 className="h1">Fun Facts about React</h1>
         <ul>
             <li>Was first released in 2013</li>
             <li>Was originally created by Jordan Walke</li>
@@ -75,7 +75,7 @@ function Page () {
     <div>
         <Header />
         <MainContent />
-        <footer className="footer">2023 Lemis Development. All rights reserved</footer>
+        <footer className="footer"> &#169; 2023 Lemis Development. All rights reserved</footer>
     </div>
     );
 }

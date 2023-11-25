@@ -36,7 +36,7 @@ function FooterSection () {
     
 }
 
-function Page () {
+function App () {
     return (
     <div>
         <Header />
@@ -47,5 +47,4 @@ function Page () {
 }
 
 
-//ReactDOM.createRoot(document.getElementById("root")).render(page);
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

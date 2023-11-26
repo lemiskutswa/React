@@ -1,6 +1,7 @@
-*{
+body{
   margin: 0;
-  font-family: 'Inter';
+  font-family: 'Inter, san-serif';
+  background-color: #282D35;
 }
 .nav-bar{
   display: flex;
@@ -40,6 +41,8 @@
 
 .nav-logo {
   width: 40px;
+  height: 40px;
+  padding-top: 16px;
 }
 
 .footer{
@@ -55,6 +58,13 @@
   padding-left: 0.5em;
 }
 
+.main-content{
+  color: #fff;
+  background-image: url(./components/react-icon-large.png);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+}
+
 .h1{
   margin-left: 27px;
   margin-top: 57px;
@@ -67,4 +77,9 @@
   margin-top: 30px;
   margin-left: 30px;
   line-height: 2;
+}
+
+.fun-facts-list > li::marker{
+  font-size: 1.4rem;
+  color: #61DAFB;
 }

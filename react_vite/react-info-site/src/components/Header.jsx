@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./assets/react-logo.png"
+import logo from "./react-logo.png"
 
 export default function Header() {
     return (

@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: 'Poppins, san-serif';
+    font-family: 'Poppins';
 }
 
 .nav-logo{
@@ -13,6 +13,7 @@ body {
 }
 
 .logo-image{
+    display: flex;
     width: 82.02px;
     height: 25.352px;
     flex-shrink: 0;
@@ -22,8 +23,8 @@ body {
 }
 
 .photo-grid-img{
-    width: 700px;
-    height: 430px;
+    width: 500px;
+    height: 330px;
     margin-left: 77px;
     background: #fff;
     margin-top: 50px;
@@ -37,4 +38,11 @@ body {
     font-weight: 600;
     line-height: 110%;
     margin-left: 36px;
+}
+
+.online-experiences-tagline{
+    margin-left: 36px;
+    margin-top: -20px;
+    max-width: 400px;
+    font-weight: 300;    
 }

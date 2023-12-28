@@ -2,7 +2,7 @@ import React from "react"
 import CardImage from "../images/katie-zaferes.png"
 import StarIcon from "../images/star.png"
 
-export default function () {
+export default function Card() {
     return(
         <div className="cards-section">
             <div className="card-element">

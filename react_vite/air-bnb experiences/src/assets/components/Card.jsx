@@ -4,7 +4,7 @@ import StarIcon from "../images/star.png"
 
 export default function () {
     return(
-        <section className="cards-section">
+        <div className="cards-section">
             <div className="card-element">
                 <div className="card-image-section">
                     <img src= {CardImage} alt="Main card image" className="card-image"/>
@@ -22,7 +22,6 @@ export default function () {
                 </div>
             </div>
             
-        </section>
-
+        </div>
     )
 }

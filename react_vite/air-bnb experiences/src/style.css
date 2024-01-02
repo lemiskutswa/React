@@ -53,6 +53,7 @@ body {
 }
 .card-element{
     width: 176px;
+    height: auto;
 }
 
 .first-row{

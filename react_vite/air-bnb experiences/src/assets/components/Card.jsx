@@ -3,6 +3,9 @@ import React from "react"
 import StarIcon from "../images/star.png"
 
 export default function Card(props) {
+    const element = <>Hello</>
+    console.log(element);
+
     return(
         <div className="cards-section">
             <div className="card-element">
@@ -25,3 +28,4 @@ export default function Card(props) {
         </div>
     )
 }
+

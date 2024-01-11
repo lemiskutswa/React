@@ -2,21 +2,27 @@ import React from "react"
 import Navbar from "./assets/components/Navbar";
 import Hero from "./assets/components/Hero";
 import Card from "./assets/components/Card";
+import cardData from "./data.js"
 
 
 export default function App () {
+ 
+  const dataElements = cardData.map(data => {
+    return <Card
+    img = {data.img}
+    rating= {data.stats.rating}
+    reviewCount= {data.stats.reviewCount}
+    location = {data.location}
+    title={data.title}
+    price = {data.price}
+  />
+  });
+
   return (
     <div>
       <Navbar />
       <Hero />
-      <Card
-        img ="katie-zaferes.png"
-        rating= {5.0}
-        reviewCount= {6}
-        country = "USA"
-        title="Life Lessons with Katie Zaferes"
-        price = {136}
-      />
+      {dataElements}
     </div>
   );
 }

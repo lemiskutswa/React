@@ -16,7 +16,7 @@ export default function Card(props) {
                 <div className="card-content">
                     <div className="first-row">
                         <img src={StarIcon} alt="star-icon" className="star-icon"/>
-                        <p className="rating">{props.rating} <span className="location">({props.reviewCount}) &middot; {props.country}</span></p>
+                        <p className="rating">{props.rating} <span className="location">({props.reviewCount}) &middot; {props.location}</span></p>
                     </div>
                     <div className="labels">
                         <h2>{props.title}</h2>

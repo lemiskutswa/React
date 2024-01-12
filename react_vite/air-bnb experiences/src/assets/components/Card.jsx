@@ -2,29 +2,22 @@ import React from "react"
 //import CardImage from "../images/katie-zaferes.png"
 import StarIcon from "../images/star.png"
 
+
+//AGENDA TOMORROW: Look through each HTML CSS and JS to find the problem
+
 export default function Card(props) {
-    const element = <>Hello</>
-    console.log(element);
 
     return(
-        <div className="cards-section">
-            <div className="card-element">
-                <div className="card-image-section">
-                    <img src= {`src/assets/images/${props.img}`} alt="Main card image" className="card-image"/>
-                    <p className="sold-out-text">SOLD OUT</p>
-                </div>
-                <div className="card-content">
-                    <div className="first-row">
-                        <img src={StarIcon} alt="star-icon" className="star-icon"/>
-                        <p className="rating">{props.rating} <span className="location">({props.reviewCount}) &middot; {props.location}</span></p>
-                    </div>
-                    <div className="labels">
-                        <h2>{props.title}</h2>
-                        <p> <span className="price">From ${props.price}</span> / person</p>
-                    </div>
-                </div>
+<div className="card">
+            <img src={`src/assets/images/${props.img}`} className="card--image" />
+            <div className="card--stats">
+                <img src={StarIcon} className="card--star" />
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount}) • </span>
+                <span className="gray">{props.location}</span>
             </div>
-            
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }

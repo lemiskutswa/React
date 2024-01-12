@@ -1,119 +1,68 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
-.nav-logo{
+nav {
+    height: 70px;
     display: flex;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.logo-image{
-    display: flex;
-    width: 82.02px;
-    height: 25.352px;
-    flex-shrink: 0;
-    margin-top: 22px;
-    margin-bottom: 22px;
-    margin-left: 30px;
-}
-
-.photo-grid-img{
-    width: 500px;
-    height: 330px;
-    margin-left: 77px;
-    background: #fff;
-    margin-top: 50px;
-}
-
-.online-experiences-h1{
-    color: #000;
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
-    margin-left: 36px;
-}
-
-.online-experiences-tagline{
-    margin-left: 36px;
-    margin-top: -20px;
-    max-width: 400px;
-    font-weight: 300;    
-}
-
-
-.cards-section{
-    margin-left: 37px;
-}
-.card-element{
-    width: 176px;
-    height: auto;
-}
-
-.first-row{
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 0.1;
-}
-
-.first-row > img{
-    height: 12px;
-    width: 14px;
-    margin-right: 2px;
-}
-
-.location{
-    color: #918E9B;
-}
-
-.card-image{
-    width: 100%;
-    height: 235px;
-    flex-shrink: 0;
-    border-radius: 9px;
-}
-
-h2 {
-    font-size: 0.75rem;
-    font-weight: normal;
-}
-
-.labels{
-    line-height: 0.7;
-    font-size: 0.75rem;
-    margin-top: -6px;
-}
-
-.price{
+.bold {
     font-weight: bold;
 }
 
-
-.card-element{
-    position: absolute;
+.gray {
+    color: #918E9B;
 }
 
+.nav--logo {
+    max-width: 100px;
+}
 
-.sold-out-text{
-    position: relative;
-    top: -250px;
-    color: #fff;
-    right: -10px;
-    background-color: #fff;
-    color: #000;
-    width: 35%;
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--photo {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--header {
+    margin-bottom: 16px;
+}
+
+.hero--text {
+    margin-top: 0;
+}
+
+.card {
+    width: 175px;
     font-size: 12px;
-    border-radius: 2px;
-    text-align: center;
 }
 
-.card-image-section{
-    margin-bottom: -50px;
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+}
+
+.card--star {
+    height: 14px;
 }

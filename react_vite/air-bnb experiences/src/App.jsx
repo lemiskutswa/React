@@ -7,14 +7,14 @@ import cardData from "./data.js"
 
 export default function App () {
  
-  const dataElements = cardData.map(data => {
+  const cards = cardData.map(item => {
     return <Card
-    img = {data.img}
-    rating= {data.stats.rating}
-    reviewCount= {data.stats.reviewCount}
-    location = {data.location}
-    title={data.title}
-    price = {data.price}
+    img = {item.coverImg}
+    rating= {item.stats.rating}
+    reviewCount= {item.stats.reviewCount}
+    location = {item.location}
+    title={item.title}
+    price = {item.price}
   />
   });
 
@@ -22,7 +22,7 @@ export default function App () {
     <div>
       <Navbar />
       <Hero />
-      {dataElements}
+      {cards}
     </div>
   );
 }

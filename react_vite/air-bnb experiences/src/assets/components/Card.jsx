@@ -9,7 +9,7 @@ export default function Card(props) {
 
     return(
 <div className="card">
-            <div className="sold-out-badge">SOLD OUT</div>
+            {props.openSpots === 0 && <div className="sold-out-badge">SOLD OUT</div>}
             <img src={`src/assets/images/${props.img}`} className="card--image" />
             <div className="card--stats">
                 <img src={StarIcon} className="card--star" />

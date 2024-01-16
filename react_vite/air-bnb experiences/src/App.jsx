@@ -10,7 +10,7 @@ export default function App () {
   const cards = cardData.map(item => {
     return <Card
     key={item.id}
-    item={item} //same as {...item} -> Using the spread operator
+    item={item} //same as {...item} -> Using the spread operator {but not as advisable}
   />
   });
 

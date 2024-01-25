@@ -1,9 +1,5 @@
 import React from "react"
-//import CardImage from "../images/katie-zaferes.png"
 import StarIcon from "../images/star.png"
-
-
-//AGENDA TOMORROW: Look through each HTML CSS and JS to find the problem
 
 export default function Card(props) {
 

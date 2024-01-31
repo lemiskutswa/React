@@ -71,6 +71,39 @@ section {
     margin-top: 0;
 }
 
+.hero-images{
+    width: 38rem;
+    border-radius: 8px;
+    margin-left: 10px;
+    overflow-x: scroll;
+}
+
+.show-all-button{
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.show-all-img{
+    position: relative;
+}
+
+.new-this-week{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
+}
+
+.new-this-week::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: make scrollbar track transparent */
+  }
+
 .cards-list {
     display: flex;
     flex-wrap: nowrap;

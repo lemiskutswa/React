@@ -10,7 +10,7 @@ export default function Header() {
             </header>
 
             <div className="course-project">
-                <p>React Course Project 3</p>
+                <p>By Lemis Kutswa</p>
             </div>
         </div>
 

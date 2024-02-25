@@ -3,16 +3,13 @@ import Logo from "../assets/images/troll-face.png"
 
 export default function Header() {
     return (
-        <div className="header">
-            <header className="title-logo">
-                <img src={Logo} alt="troll-face-logo" />
-                <h2>Meme Generator</h2>
-            </header>
-
-            <div className="course-project">
-                <p>By Lemis Kutswa</p>
-            </div>
-        </div>
-
+        <header className="header">
+            <img 
+                src={Logo} 
+                className="header--image"
+            />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">By Lemis Kutswa</h4>
+        </header>
     )
 }

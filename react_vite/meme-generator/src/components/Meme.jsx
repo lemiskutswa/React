@@ -11,7 +11,6 @@ export default function Meme() {
 
     const [allMemeImages, setAllMemeImages] = useState(memesData);
  
-
     function getMemeImage() {
         const memeArray = allMemeImages.data.memes;
         const randomNumber = Math.floor(Math.random() * memeArray.length);

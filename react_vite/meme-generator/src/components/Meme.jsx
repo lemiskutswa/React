@@ -10,10 +10,7 @@ export default function Meme() {
     });
 
     const [allMemeImages, setAllMemeImages] = useState(memesData);
-
-    
-    
-    //const [memeImage, setMemeImage] = useState('http://i.imgflip.com/1bij.jpg');
+ 
 
     function getMemeImage() {
         const memeArray = allMemeImages.data.memes;

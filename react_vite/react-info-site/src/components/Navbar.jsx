@@ -1,7 +1,7 @@
 import React from "react"
 import logo from "./react-logo.png"
 
-export default function Header() {
+export default function Navbar() {
     return (
         <nav className="nav-bar">
             <div className="logo-title">
